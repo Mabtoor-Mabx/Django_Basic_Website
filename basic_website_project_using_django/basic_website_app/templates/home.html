@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>
+    {{message}}
+</h1>
+
+{% if items %}
+
+<ul>
+    {% for item in items  %}
+    
+    <li> {{item}} </li>
+    <hr>
+    {% endfor %}
+</ul>
+
+{% else %}
+<p>
+    No Items Avalible
+</p>
+{% endif %}
+{% endblock %}
